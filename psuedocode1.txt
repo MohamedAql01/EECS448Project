@@ -1,0 +1,32 @@
+Date Started: 9/11/22
+Date Modified: 9/11/22
+Author: Muhammad Momin Rahman
+
+Pseudocode
+
+class central:
+	constructor:
+		calendar list
+	event method:
+		if user clicks add:
+			add a calendar
+		else if the user clicks delete:
+			delete a calendar
+	add method(calendar name):
+		new calendar object
+		add the calendar object to the list
+	delete method(name):
+		try
+			removing a calendar from the list given a specific name or id
+		except
+			output to the user that no calendar of the given parameters exists in the list
+
+class calendar object:
+	constructor (name):
+		id
+		name
+		background (none to exist at instantiation)
+	set background method:
+		display image or color (GUI knowledge requirement)
+
+		
