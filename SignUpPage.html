@@ -11,21 +11,53 @@
         
         <h4>First name</h4>
         <div class = "textbox">
-                    <input type="text" placeholder = "First name">
+                    <input type="text" placeholder = "First name" id = "first_name">
         </div>
         <h4>Last name</h4>
         <div class = "textbox">
-                    <input type="text" placeholder = "Last name">
+                    <input type="text" placeholder = "Last name" id = "last_name">
         </div>
         <h4>Email address</h4>
         <div class = "textbox">
-                    <input type="text" placeholder = "Email address">
+                    <input type="text" placeholder = "Email address" id = "email">
         </div>
         <h4>Phone number</h4>
         <div class = "textbox">
-                    <input type="text" placeholder = "Phone Number">
+                    <input type="text" placeholder = "Phone Number" id = "phone_number">
         </div>
-        <input type = "submit" value ="Create Account" class = "loginBtn">
+        <h4>Username</h4>
+        <div class = "textbox">
+                    <input type = "text" placeholder = "Username" id = "username">
+        </div>
+        <h4>Password</h4>
+        <div class = "textbox">
+                    <input type = "text" placeholder = "Password" id = "password1">
+        </div>
+        <h4>Re-enter password</h4>
+        <div class = "textbox">
+                    <input type = "text" placeholer = "Re-enter password" id = "password2">
+        </div>
+    </br>
+        <button onclick = "validate" class = "loginBtn">Submit</button>
+        <script>
+            function validate() 
+            {
+                const pass1 = document.getElementById("password1").value;
+                const pass2 = document.getElementById("password2").value;
 
+                if(pass1.length < 8 | pass2.length < 8) 
+                {
+                    alert("Password is not long enough");
+                } 
+                else if(pass1 != pass2) 
+                {
+                    alert("Passwords do not match");
+                } 
+                else 
+                {
+                    alert("Passwords match!")
+                }
+            }
+        </script>
     </form>
 </body>
