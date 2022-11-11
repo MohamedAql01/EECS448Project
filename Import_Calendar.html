@@ -9,19 +9,39 @@
             <a href = "SignUpPage.html">Previous Page</a>
         </div>
         
-        <h4>Enter email adress</h4>
+        <h4>Enter email adress to import calendar from</h4>
         <div class = "textbox">
-                    <input type="text" placeholder = "Email">
+                    <input type="text" placeholder = "Email" id = "email">
         </div>
-        <h4>Enter Password</h4>
+        <h4>Enter Password from the account</h4>
         <div class = "textbox">
-                    <input type="text" placeholder = "Password">
+                    <input type="text" placeholder = "Password" id = "password">
         </div>
         <h4>What would you like to name the calendar?</h4>
         <div class = "textbox">
-                    <input type="text" placeholder = "Name">
-        
-        <input type = "submit" value ="Submit" class = "loginBtn">
+                    <input type="text" placeholder = "Name" id = "calendarName">
+        </div>
+        <br>
+        <input type = "button" onclick = "validateCalendar()" id = "submit" class = "loginBtn" value = "Submit">
+
+        <script>
+            document.getElementById("submit").onclick = 
+            function validateCalendar()
+            {
+                const emailAddress = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+                const calendarName = document.getElementById("calendarName").value;
+
+                if((emailAddress == "") || (password == "") || (calendarName == ""))
+                {
+                    alert("One or more fields is empty!");
+                }
+                else
+                {
+                    window.open("HomePage.html", "newwindow");
+                }
+            }
+        </script>
 
     </form>
 </body>

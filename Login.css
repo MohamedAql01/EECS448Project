@@ -8,13 +8,13 @@
 body
 {
     min-height: 100vh;
-    background-color:#e36b0e;
+    background: linear-gradient(#e66465, #9198e5);
 }
 form
 {
-    background: #eaea08;
+    
     width: 350px;
-    height:580px;
+    height:800;
     padding: 75px 50px;
     position: absolute;
     left:50%;
@@ -27,10 +27,6 @@ h1
     margin-bottom: 45px;
     color: white;
     font-size: 40px;
-}
-h2
-{
-    text-emphasis-color: aqua;
 }
 .textBoxdiv
 {
@@ -54,7 +50,6 @@ h2
     width:100%;
     border: none;
     outline:none;
-    background: linear-gradient(to right top, rgb(204, 9, 9));
     background-size: 200%;
 }
 .loginBtn
@@ -69,9 +64,9 @@ h2
 }
 h3
 {
-    color:#e36b0e;
-    margin-right: 10%;
-    font-size: 25px;
+    color:burlywood;
+    text-align: center;
+    font-size: 50px;
 }
 .previousPage
 {
